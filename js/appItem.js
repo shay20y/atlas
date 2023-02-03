@@ -40,8 +40,6 @@ export default class AppClass {
         for (const key in this.languages) {
             languages += ` | ${key}: ${this.languages[key]} | `;
         }
-
-        console.log(languages);
         
 
         div.innerHTML = `
