@@ -1,0 +1,5 @@
+src="https://maps.google.com/maps?q=31.47,35.13&z=7&ie=UTF8&iwloc=&output=embed"
+
+q = מספר תחתון  ||  מספר עליון
+
+<iframe src="https://maps.google.com/maps?q=31.47,35.13&z=7&ie=UTF8&iwloc=&output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
