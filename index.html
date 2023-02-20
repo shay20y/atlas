@@ -5,12 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS -->
-    <link rel="stylesheet" href="index.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+        rel="stylesheet">
     <!-- font awesome css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <!-- bootstrap -->
     <link rel="stylesheet" href="bootstrap.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- js defer -->
     <script type="module" defer src="js/app.js"></script>
 
@@ -22,22 +29,24 @@
 <body>
     <header class="container-fluid bg-info p-2">
         <div class="container">
-            <div class="row d-flex">
-                <div class="search_form d-flex">
-                    <div class="img col">
+            <div class="row d-flex justify-content-between">
+                <div class="search_form d-flex col h-75 p-1">
+                    <div class="img">
                         <a href="index.html?search=ISRAEL" class="p-2">
                             <i style="font-size: 3em;" class="fa fa-globe" aria-hidden="true"></i>
                         </a>
                     </div>
-                    <input class="form-control" type="text" id="id_input" name="" placeholder="search a cantey">
-                    <button class="btn btn-primary" id="search_btn"> <i class="fa fa-search"
-                            aria-hidden="true"></i></button>
+                    <div class="input col d-flex">
+                        <input class="form-control" type="text" id="id_input" name="" placeholder="search a Country">
+                        <button class="btn btn-primary" id="search_btn"> <i class="fa fa-search"
+                                aria-hidden="true"></i></button>
+                    </div>
                 </div>
                 <nav id="nav_open" class="col-auto d-lg-block">
                     <ul class="">
-                        <li><a href="index.html?search=USA">USA</a></li>
+                        <li><a href="index.html?search=United%20States">USA</a></li>
                         <li><a href="index.html?search=ISRAEL">ISRAEL</a></li>
-                        <li><a href="index.html?search=GB">GB</a></li>
+                        <li><a href="index.html?search=United%20Kingdom">UK</a></li>
                         <li><a href="index.html?search=FRANCE">FRANCE</a></li>
                         <li><a href="index.html?search=THAILAND">THAILAND</a></li>
                     </ul>
@@ -49,44 +58,42 @@
             </div>
         </div>
     </header>
-    <main class="container">
+    <main class="container ">
         <div id="id_row">
-            <!-- <h1>isreal</h1>
-                <div class="row d-flex col-12">
-                    
-                    <div class="col-md-6"><img src="il.png" width="100%" alt=""></div>
-                    
-                    <div class="bio col-md-6 p-4">
-                        <h3>israel</h3>
-                        <div>POP: 9,000,430</div>
-                        <div>region: Asia</div>
-                        <div>Languages: Heb</div>
-                        <div>Coin: israel new shekel </div>
-                        <div>Capital: Jerusalem</div>
-                    </div>
-                    
-                    
+            <!-- <h1 class="text-center border-bottom ">${this.name}</h1>
+            <div class="row row1 d-flex justify-content-between col-12">
+
+                <div class="col"><img src="https://flagcdn.com/w320/pe.png" alt=""></div>
+
+                <div class="bio text-center col-md-4 p-2">
+                    <h3>${this.name}</h3>
+                    <div>POP: ${this.pop}</div>
+                    <div>Region: ${this.region}</div>
+                    <div>Languages: ${languages}</div>
+                    <div>Coin: ${coinList} </div>
+                    <div>Capital: ${this.capital}</div>
+                    <div><a target="_blank" href="${this.googleMap}">link to google maps</a></div>
                 </div>
-                
-                <div class="row d-flex col-12">
-                    
-                    <div class="bio col-md-6 p-4">
-                        <h3>States with border</h3>
-                        <ul>
-                            <li><a href="name">name</a></li>
-                            <li><a href="name">name</a></li>
-                            <li><a href="name">name</a></li>
-                            <li><a href="name">name</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="col-md-6">
-                        <iframe src="https://maps.google.com/maps?q=31.47,35.13&z=7&ie=UTF8&iwloc=&output=embed"
-                        width="100%" height="200%" style="border:0;" allowfullscreen="" loading="lazy"
+
+                <div class="bio col-md-4 text-center">
+                    <h3>States with border</h3>
+                    ${bordersList}
+                    <h4></h4>
+                </div>
+
+            </div>
+
+            <div class="row row2 d-flex col-12">
+
+
+                <div class=" p-1">
+                    <iframe style="min-height: 45vh;" src="https://maps.google.com/maps?q=${this.map}&z=5&ie=UTF8&iwloc=&output=embed"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div> -->
-        </div>
+                </div>
+            </div>
+
+        </div> -->
     </main>
     <!-- <script src="js/burger.js"></script> -->
     <script src="js/burger.js"></script>

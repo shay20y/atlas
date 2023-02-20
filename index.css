@@ -14,18 +14,21 @@ nav .row ul li {
 }
 
 body {
-    background: silver;
-    font-family: 'Unbounded', cursive;
+    background: rgba(192, 192, 192, 0.355) !important;
+    font-family: 'Roboto Condensed', sans-serif;
     background: url(index_image/bk.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
 
+.bio{
+    padding: 25px;
+}
 
+.googleMaps{
+    min-height: 50vh !important;
 
-.container {
-    max-width: 1140px;
 }
 
 header {
@@ -36,33 +39,9 @@ header {
     z-index: 99999999999999999;
 
 }
-
-header .row .search_form {
-    max-width: 65%;
-    max-height: 55px;
-
-}
-
-header .row {
-    background-image: url(index_image/1200px-Flag_of_the_United_Kingdom_\(2-3\).svg.jpg);
-    justify-content: space-between;
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    border-radius: 12px;
-}
-
-header .row .logo {
-    width: 84px;
-}
-
-header .row .logo img {
-    transition: 800ms;
-}
-
-header .row .logo img:hover {
-    transform: scale(1.15);
+header img{
+min-width: 100%;
+position:  absolute;
 }
 
 header .row nav ul {
@@ -118,15 +97,19 @@ header .row nav ul a:hover {
 
 /* end header */
 
-main a{
+main a {
     text-decoration: none;
     transition: 800ms;
 }
-main a:hover{
-   color: red;
-   transform: scale(1.25);
-    
+
+main a:hover {
+    color: red;
+    transform: scale(1.25);
+
 }
+
+
+
 
 @media (max-width:991px) {
     header .row nav {
@@ -142,6 +125,15 @@ main a:hover{
         z-index: 99999999;
         border-radius: 8px;
     }
+
+    .googleMaps{
+        width: 110% !important;
+    }
+
+    .bio{
+    padding: 0;
+    /* min-width: 100%; */
+} 
 
     .strip .img {
         min-height: 60vh;
